@@ -1,0 +1,53 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+        <div class="row centered-form">
+        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+        	<div class="panel panel-default">
+        		<div class="panel-heading">
+			    		<h3 class="panel-title">Enter Details to Book Servicing</h3>
+			 			</div>
+			 			<div class="panel-body">
+			    		<form [formGroup]="bookingForm">
+			    			<div class="row">
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			                <input type="text" name="firstName" id="firstname" class="form-control input-sm" placeholder="First Name" formControlName="firstname" >
+			    					</div>
+			    				</div>
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="text" name="lastName" id="lastName" class="form-control input-sm" placeholder="Last Name" formControlName="lastname">
+			    					</div>
+			    				</div>
+			    			</div>
+
+			    			
+							<div class="form-group">
+									<input type="text" name="contactno" id="contactno" class="form-control input-sm" placeholder="contact no" formControlName="contactNo">
+								</div>
+								<div class="form-group">
+										<input type="text" name="vehicleno" id="vehicleno" class="form-control input-sm" placeholder="vehicleno" formControlName="vehicleNo">
+									</div>
+									<div class="form-group">
+											<input type="text" name="vehicletype" id="vehicletype" class="form-control input-sm" placeholder="vehicletype" formControlName="vehicleType">
+										</div>
+											<div class="form-group">
+													<input type="date" name="date" id="date" class="form-control input-sm" placeholder="date" formControlName="date">
+												</div>
+
+			    				
+			    			<input type="submit" value="Book" class="btn btn-info btn-block" (click)="addbooking()">
+							
+							
+			    		
+			    		</form>
+			    	</div>
+	    		</div>
+    		</div>
+    	</div>
+    </div>
